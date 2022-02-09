@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "osx_ntfs_rw"
+version = "0.1.0"
+description = "Remount NTFS partitions with write support (using ntfs-3g)"
+authors = ["Rodrigo Ferreira de Souza <rodfersou@gmail.com>"]
+
+packages = [
+    { include = "ntfs_rw", from = "src" }
+]
+
+[tool.poetry.dependencies]
+python = "^3"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+ntfs-rw = "ntfs_rw.main:main"
