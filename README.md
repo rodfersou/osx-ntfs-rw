@@ -12,7 +12,7 @@ This is a good tutorial about this procedure: https://iboysoft.com/howto/enable-
 ## Install this utility
 We recommend to [install pipx](https://github.com/pypa/pipx#install-pipx) first and run this command
 ```bash
-pipx install https://github.com/rodfersou/osx-ntfs-rw
+pipx install git+https://github.com/rodfersou/osx-ntfs-rw.git
 ```
 
 ## Plug the device and trigger the utility 
