@@ -14,6 +14,7 @@ We recommend to [install pipx](https://github.com/pypa/pipx#install-pipx) first 
 ```bash
 pipx install git+https://github.com/rodfersou/osx-ntfs-rw.git
 ```
+You may need to restart your shell
 
 ## Plug the device and trigger the utility 
 
