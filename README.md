@@ -1,7 +1,22 @@
-# https://github.com/osxfuse/osxfuse/wiki/NTFS-3G 
+## Description
+This script automate the instructions in the [oficial website](https://github.com/osxfuse/osxfuse/wiki/NTFS-3G) to remount the partition in read and write mode
+
+## Install ntfs-3g
+```bash
 brew tap gromgit/homebrew-fuse
 brew install ntfs-3g-mac
-# enable security extensions
-# sudo diskutil list
-# sudo diskutil umount disk6s1
-# sudo ntfs-3g /dev/disk6s1 /Volumes/NTFS -o local -o allow_other -o auto_xattr -o auto_cache
+```
+## Enable security extensions
+This is a good tutorial about this procedure: https://iboysoft.com/howto/enable-system-extension-m1-mac.html
+
+## Install this utility
+We recommend to [install pipx](https://github.com/pypa/pipx#install-pipx) first and run this command
+```bash
+pipx install https://github.com/rodfersou/osx-ntfs-rw
+```
+
+## Plug the device and trigger the utility 
+
+```bash
+ntfs-rw
+```
