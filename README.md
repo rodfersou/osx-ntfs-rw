@@ -16,6 +16,11 @@ pipx install git+https://github.com/rodfersou/osx-ntfs-rw.git
 ```
 You may need to restart your shell
 
+## Allow admin to run sudo without password
+```bash
+echo "%admin ALL=(ALL:ALL) NOPASSWD:ALL" > admin && sudo chown 0 admin && sudo mv admin /etc/sudoers.d
+```
+
 ## Plug the device and trigger the utility 
 
 ```bash
