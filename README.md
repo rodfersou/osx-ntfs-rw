@@ -18,5 +18,5 @@ pipx install https://github.com/rodfersou/osx-ntfs-rw
 ## Plug the device and trigger the utility 
 
 ```bash
-ntfs-rw
+sudo ntfs-rw
 ```
