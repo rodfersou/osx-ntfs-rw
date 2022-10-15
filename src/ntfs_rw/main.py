@@ -40,7 +40,7 @@ def select_disk() -> Disk:
     disks = [Disk(*r) for r in result]
 
     # Select partition
-    disks = [disk for disk in disks if disk.type == "Windows_NTFS"]
+    disks = [disk for disk in disks if disk.type == "Windows_NTFS" or disk.type == "Microsoft"]
     if len(disks) == 1:
         selected = disks[0]
     else:
